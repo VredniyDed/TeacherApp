@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <children>
+        <VBox layoutX="21.0" layoutY="288.0" spacing="15.0" visible="false">
+            <children>
+                <Label text="st_id">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="st_name">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="st_surname">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="group_name">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="131.0" layoutY="285.0" prefHeight="130.0" prefWidth="129.0" spacing="10.0" visible="false">
+            <children>
+                <TextField fx:id="idStField" />
+                <TextField fx:id="nameStField" />
+                <TextField fx:id="surnameStField" />
+                <TextField fx:id="groupStField" />
+            </children>
+        </VBox>
+        <HBox layoutX="59.0" layoutY="429.0" prefHeight="37.0" prefWidth="201.0" spacing="10.0" visible="false">
+            <children>
+                <Button fx:id="insertButtonSt" mnemonicParsing="false" onAction="#insertButtonSt" prefHeight="30.0" prefWidth="60.0" text="Insert" />
+                <Button fx:id="updateButtonSt" mnemonicParsing="false" onAction="#updateButtonSt" prefHeight="30.0" prefWidth="60.0" text="Update" />
+                <Button fx:id="deleteButtonSt" mnemonicParsing="false" onAction="#deleteButtonSt" prefHeight="30.0" prefWidth="60.0" text="Delete" />
+            </children>
+        </HBox>
+        <Button fx:id="exitButton" layoutX="940.0" layoutY="517.0" mnemonicParsing="false" onAction="#switchToAuthentication" prefHeight="37.0" prefWidth="60.0" text="exit" />
+        <HBox layoutX="59.0" layoutY="170.0" prefHeight="37.0" prefWidth="201.0" spacing="10.0" visible="false">
+            <children>
+                <Button fx:id="insertButtonDn" layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onAction="#insertButtonDn" prefHeight="30.0" prefWidth="60.0" text="Insert" />
+                <Button fx:id="updateButtonDn" alignment="CENTER" layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onAction="#updateButtonDn" prefHeight="30.0" prefWidth="60.0" text="Update" />
+                <Button fx:id="deleteButtonDn" layoutX="14.0" layoutY="442.0" mnemonicParsing="false" onAction="#deleteButtonDn" prefHeight="30.0" prefWidth="60.0" text="Delete" />
+            </children>
+        </HBox>
+        <VBox layoutX="21.0" layoutY="19.0" spacing="15.0" visible="false">
+            <children>
+                <Label text="dn_id">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="dn_name">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="dn_max_score">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label text="dn_num_lessons">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="131.0" layoutY="19.0" prefHeight="130.0" prefWidth="129.0" spacing="10.0" visible="false">
+            <children>
+                <TextField fx:id="idDnField" />
+                <TextField fx:id="nameDnField" />
+                <TextField fx:id="max_scoreDnField" />
+                <TextField fx:id="num_lessonsDnField" />
+            </children>
+        </VBox>
+      <Hyperlink layoutX="942.0" layoutY="19.0" onAction="#showRequestsHyperLink" text="Requests" />
+      <ScrollPane layoutX="21.0" layoutY="19.0" prefHeight="477.0" prefWidth="890.0">
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="707.0" prefWidth="875.0">
+               <children>
+                        <TableView fx:id="TableViewGr" layoutX="23.0" layoutY="39.0" onMouseMoved="#showGrades" prefHeight="187.0" prefWidth="393.0">
+                            <columns>
+                                <TableColumn fx:id="grades_idGr" prefWidth="35.0" text="gr_id" />
+                                <TableColumn fx:id="st_idGr" prefWidth="115.0" text="st_id" />
+                                <TableColumn fx:id="dn_idGr" prefWidth="71.0" text="dn_id" />
+                                <TableColumn fx:id="gradeGr" minWidth="8.0" prefWidth="73.0" text="grade" />
+                                <TableColumn fx:id="gr_dateGr" prefWidth="98.0" text="gr_date" />
+                            </columns>
+                        </TableView>
+                    <TableView fx:id="TableViewDn" layoutX="456.0" layoutY="260.0" onMouseMoved="#showDisciplines" prefHeight="187.0" prefWidth="393.0">
+                        <columns>
+                            <TableColumn fx:id="dn_id" prefWidth="73.0" text="dn_id" />
+                            <TableColumn fx:id="dn_name" minWidth="0.0" prefWidth="149.0" text="name" />
+                            <TableColumn fx:id="dn_max_score" prefWidth="88.0" text="max_score" />
+                            <TableColumn fx:id="dn_num_lessons" prefWidth="82.0" text="num_lessons" />
+                        </columns>
+                    </TableView>
+                      <TableView fx:id="TableViewSt" layoutX="456.0" layoutY="39.0" onMouseMoved="#showStudents" prefHeight="187.0" prefWidth="393.0">
+                          <columns>
+                              <TableColumn fx:id="st_id" prefWidth="35.0" text="id" />
+                              <TableColumn fx:id="st_name" prefWidth="115.0" text="name" />
+                              <TableColumn fx:id="st_surname" prefWidth="166.0" text="surname" />
+                              <TableColumn fx:id="group_name" prefWidth="76.0" text="group" />
+                          </columns>
+                      </TableView>
+                    <TableView fx:id="TableViewSl" layoutX="24.0" layoutY="484.0" onMouseMoved="#showSchedule" prefHeight="187.0" prefWidth="393.0">
+                        <columns>
+                            <TableColumn fx:id="sl_idSl" prefWidth="73.0" text="sl_id" />
+                            <TableColumn fx:id="dn_idSl" minWidth="0.0" prefWidth="71.0" text="dn_id" />
+                            <TableColumn fx:id="group_nameSl" prefWidth="124.0" text="group_name" />
+                            <TableColumn fx:id="schedule_dateSl" prefWidth="124.0" text="schedule_date" />
+                        </columns>
+                    </TableView>
+                    <TableView fx:id="TableViewAt" layoutX="23.0" layoutY="260.0" onMouseMoved="#showAttendance" prefHeight="187.0" prefWidth="393.0">
+                        <columns>
+                            <TableColumn fx:id="att_idAt" prefWidth="35.0" text="att_id" />
+                            <TableColumn fx:id="st_idAt" prefWidth="115.0" text="st_id" />
+                            <TableColumn fx:id="dn_idAt" prefWidth="71.0" text="dn_id" />
+                            <TableColumn fx:id="sl_idAt" minWidth="8.0" prefWidth="73.0" text="sl_id" />
+                            <TableColumn fx:id="att_stAt" prefWidth="98.0" text="att_status" />
+                        </columns>
+                    </TableView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="14.0" prefHeight="17.0" prefWidth="392.0" text="Disciplines" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="457.0" layoutY="14.0" prefHeight="17.0" prefWidth="392.0" text="Students" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="234.0" prefHeight="17.0" prefWidth="392.0" text="Attendance" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="457.0" layoutY="234.0" prefHeight="17.0" prefWidth="392.0" text="Schedule" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="458.0" prefHeight="17.0" prefWidth="392.0" text="Grades" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="312.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label fx:id="registerMessage" layoutX="35.0" layoutY="275.0" text="Successful registration" textFill="GREEN" visible="false" />
+      <Button layoutX="277.0" layoutY="194.0" mnemonicParsing="false" onAction="#addNewUser" prefHeight="32.0" prefWidth="84.0" text="Register" />
+      <PasswordField fx:id="passRegField" layoutX="212.0" layoutY="143.0" promptText="Password" />
+      <TextField fx:id="loginRegField" layoutX="35.0" layoutY="143.0" promptText="Login" />
+      <Label layoutX="127.0" layoutY="57.0" text="Registration">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="342.0" layoutY="24.0" onAction="#switchToAuthentication" text="Login" />
+      <RadioButton fx:id="admStatus" layoutX="35.0" layoutY="201.0" mnemonicParsing="false" onAction="#admCheck" prefHeight="17.0" prefWidth="99.0" text="Admin user" />
+      <PasswordField fx:id="admPassword" layoutX="35.0" layoutY="233.0" promptText="Admin password" visible="false" />
+   </children>
+</AnchorPane>

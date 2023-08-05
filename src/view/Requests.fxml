@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <children>
+        <ScrollPane layoutX="21.0" layoutY="19.0" prefHeight="477.0" prefWidth="890.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="476.0" prefWidth="875.0">
+                    <children>
+                    <TableView fx:id="TableViewReq1" layoutX="23.0" layoutY="42.0" onMouseMoved="#showReq1" prefHeight="187.0" prefWidth="240.0">
+                        <columns>
+                            <TableColumn fx:id="full_nameReq1" prefWidth="239.0" text="full_name" />
+                        </columns>
+                    </TableView>
+                    <TableView fx:id="TableViewReq2" layoutX="21.0" layoutY="275.0" onMouseMoved="#showReq2" prefHeight="187.0" prefWidth="244.0">
+                        <columns>
+                            <TableColumn fx:id="full_nameReq2" prefWidth="155.0" text="full_name" />
+                            <TableColumn fx:id="gradeReq2" minWidth="0.0" prefWidth="88.0" text="grade" />
+                        </columns>
+                    </TableView>
+                        <TableView fx:id="TableViewReq3" layoutX="316.0" layoutY="42.0" onMouseMoved="#showReq3" prefHeight="187.0" prefWidth="244.0">
+                            <columns>
+                                <TableColumn fx:id="full_nameReq3" prefWidth="155.0" text="full_name" />
+                                <TableColumn fx:id="numReq3" minWidth="0.0" prefWidth="88.0" text="num" />
+                            </columns>
+                        </TableView>
+                        <TableView fx:id="TableViewReq4" layoutX="316.0" layoutY="275.0" onMouseMoved="#showReq4" prefHeight="187.0" prefWidth="244.0">
+                            <columns>
+                                <TableColumn fx:id="full_nameReq4" prefWidth="155.0" text="full_name" />
+                                <TableColumn fx:id="gradeReq4" minWidth="0.0" prefWidth="88.0" text="grade" />
+                            </columns>
+                        </TableView>
+                        <TableView fx:id="TableViewReq5" layoutX="583.0" layoutY="42.0" onMouseMoved="#showReq5" prefHeight="187.0" prefWidth="244.0">
+                            <columns>
+                                <TableColumn fx:id="full_nameReq5" prefWidth="242.0" text="full_name" />
+                            </columns>
+                        </TableView>
+                        <TableView fx:id="TableViewReq6" layoutX="583.0" layoutY="275.0" onMouseMoved="#showReq6" prefHeight="187.0" prefWidth="244.0">
+                            <columns>
+                                <TableColumn fx:id="full_nameReq6" prefWidth="151.0" text="full_name" />
+                                <TableColumn fx:id="gradeReq6" minWidth="0.0" prefWidth="92.0" text="grade" />
+
+                            </columns>
+                        </TableView>
+                  <Label alignment="CENTER" layoutX="23.0" layoutY="14.0" opacity="0.88" prefHeight="19.0" prefWidth="241.0" text="Запит 1" textAlignment="CENTER" />
+                  <Label alignment="CENTER" layoutX="23.0" layoutY="246.0" opacity="0.88" prefHeight="19.0" prefWidth="241.0" text="Запит 2" textAlignment="CENTER" />
+                  <Label alignment="CENTER" layoutX="318.0" layoutY="14.0" opacity="0.88" prefHeight="19.0" prefWidth="241.0" text="Запит 3" textAlignment="CENTER" />
+                  <Label alignment="CENTER" layoutX="318.0" layoutY="246.0" opacity="0.88" prefHeight="19.0" prefWidth="241.0" text="Запит 4" textAlignment="CENTER" />
+                  <Label alignment="CENTER" layoutX="585.0" layoutY="14.0" opacity="0.88" prefHeight="19.0" prefWidth="241.0" text="Запит 5" textAlignment="CENTER" />
+                  <Label alignment="CENTER" layoutX="583.0" layoutY="246.0" opacity="0.88" prefHeight="19.0" prefWidth="241.0" text="Запит 6" textAlignment="CENTER" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <Button fx:id="exitButton" layoutX="945.0" layoutY="19.0" mnemonicParsing="false" onAction="#switchToAuthentication" prefHeight="30.0" prefWidth="60.0" text="exit" />
+    </children>
+</AnchorPane>
