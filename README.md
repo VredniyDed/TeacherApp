@@ -18,4 +18,5 @@ Execute requests:
 The last stage of the task Administrators can view and edit all data. Data operators are teachers. They can only see, add and edit data related to their disciplines.
 
 *********************************************************************************************************************************************************************
+![alt text](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/resistrationPage.png?raw=true)
 
