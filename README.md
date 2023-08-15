@@ -19,8 +19,13 @@ The last stage of the task Administrators can view and edit all data. Data opera
 
 *********************************************************************************************************************************************************************
 ![alt text](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/resistrationPage.png?raw=true)
+
 ![alt text](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/changePassPage.png?raw=true)
-![alt text]([https://github.com/VredniyDed/TeacherApp/blob/master/pictures/changePassPage.png](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/erd.png)https://github.com/VredniyDed/TeacherApp/blob/master/pictures/erd.png?raw=true)
+
+![alt text]([https://github.com/VredniyDed/TeacherApp/blob/master/pictures/changePassPage.png?raw=true)
+
+![alt text](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/erd.png?raw=true)
+![alt text](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/erd.png?raw=true)
 ![alt text](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/authorizationPage.png?raw=true)
 ![alt text](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/resistrationPage.png?raw=true)
 ![alt text](https://github.com/VredniyDed/TeacherApp/blob/master/pictures/resistrationPageLoginIsTaken.png?raw=true)
